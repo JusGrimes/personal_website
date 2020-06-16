@@ -3,8 +3,6 @@ nav {
     justify-content: space-between;
     /*background-color: #7209b7;*/
     background-color: black;
-
-
 }
 
 div.nav-logo {
@@ -14,11 +12,14 @@ div.nav-logo {
     font-size: 2rem;
     align-items: center;
 }
+div.link-container {
+    margin-right: 2em;
+    display: flex;
+    align-items: flex-end;
+}
 
-div.links {
-    display:flex;
-    margin-right: 1.5rem;
-    /*align-items: center;*/
+div.nav-links {
+
 }
 
 .nav-link {
@@ -27,7 +28,7 @@ div.links {
     /*margin: 0 .25rem;*/
     border: .1em solid black;
     margin: 1em .3em;
-    padding: .5em 1em;
+    padding: .3em .3em;
     border-radius: .5em;
     text-decoration: none;
     font-weight: 900;
