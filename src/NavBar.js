@@ -9,12 +9,10 @@ class NavBar extends Component {
                 <div className="nav-logo">
                     Justin Grimes
                 </div>
-                <div className="link-container">
-                    <div className="nav-links">
-                        <NavLink className="nav-link" exact to="/">Home</NavLink>
-                        <NavLink className="nav-link" exact to="/about">About</NavLink>
-                        <NavLink className="nav-link" exact to="/projects">Projects</NavLink>
-                    </div>
+                <div className="nav-links">
+                    <NavLink className="nav-link" exact to="/">Home</NavLink>
+                    <NavLink className="nav-link" exact to="/about">About</NavLink>
+                    <NavLink className="nav-link" exact to="/projects">Projects</NavLink>
                 </div>
             </nav>
         );

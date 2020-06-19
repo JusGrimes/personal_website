@@ -1,8 +1,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    /*background-color: #7209b7;*/
-    background-color: black;
+    background-color: #262626;
 }
 
 div.nav-logo {
@@ -12,21 +11,15 @@ div.nav-logo {
     font-size: 2rem;
     align-items: center;
 }
-div.link-container {
-    margin-right: 2em;
-    display: flex;
-    align-items: flex-end;
-}
 
 div.nav-links {
-
+    display:flex;
+    align-items: flex-end;
 }
 
 .nav-link {
     color:white;
     background-color: #4361ee;
-    /*margin: 0 .25rem;*/
-    border: .1em solid black;
     margin: 1em .3em;
     padding: .3em .3em;
     border-radius: .5em;
@@ -36,7 +29,7 @@ div.nav-links {
 }
 
 .active {
-    background-color: #f72585;
+    filter:;
 }
 
 .nav-link:not(.active):hover {
