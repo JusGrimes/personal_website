@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -9,4 +10,8 @@
     --background-color: hsl(157, 40%, 40%);
     --black : hsl(0, 0%, 18%);
     --white : hsl(240, 100%, 99%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }

@@ -27,7 +27,7 @@ div.nav-links {
     padding: .3em 1em;
     border-radius: .5em;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.2rem;
     border: .1em solid var(--black);
 }
