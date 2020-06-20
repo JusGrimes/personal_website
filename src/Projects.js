@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
 
 class Projects extends Component {
+
+    constructor(props) {
+        super(props);
+
+    }
+
     render() {
         return (
-            <div>
+            <main>
+                <div className="projects-container">
 
-            </div>
+                </div>
+
+            </main>
         );
     }
 }
