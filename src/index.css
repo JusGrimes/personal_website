@@ -1,3 +1,12 @@
 * {
     box-sizing: border-box;
 }
+
+* {
+    --button-color: hsl(212, 51%, 39%);
+    --button-color-lighter: hsl(212, 51%, calc(39% + 3%));
+    --button-color-darker: hsl(212, 51%, calc(39% - 15%));
+    --background-color: hsl(157, 40%, 40%);
+    --black : hsl(0, 0%, 18%);
+    --white : hsl(240, 100%, 99%);
+}
