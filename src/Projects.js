@@ -17,14 +17,15 @@ class Projects extends Component {
         let url = "https://api.github.com/users/" + this.username + "/repos";
         fetch(url)
             .then(response => response.json())
-            .then(json => {
+            .then(responseJson => {
                 let projectsArr = [];
-                for(let i = 0; i < json.length;i++){
-                    if(!json[i].fork){
+                for(let i = 0; i < responseJson.length;i++){
+                    if(!responseJson[i].fork){
                         let curObj = {};
-                        curObj.name = json[i].name;
-                        curObj.url = json[i].html_url;
-                        curObj.description = json.description === undefined ? "": json.description;
+                        curObj.name = responseJson[i].name;
+                        curObj.url = responseJson[i].html_url;
+                        curObj.description =
+                            typeof responseJson[i].description === undefined ? "": responseJson[i].description;
                         projectsArr.push(curObj);
                     }
                 }

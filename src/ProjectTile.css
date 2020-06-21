@@ -1,0 +1,26 @@
+a.project-tile{
+    display:flex;
+    flex-direction: column;
+    width: 15rem;
+    border: .4rem solid var(--black);
+    border-radius: 3px;
+    margin: .6rem;
+}
+
+.header {
+    text-align: center;
+    border-bottom: .2rem solid var(--black);
+    width: 100%;
+}
+
+.description {
+    text-align: center;
+}
+
+a:visited,
+a:link,
+a:active,
+a:hover {
+    color:var(--black);
+    text-decoration: none;
+}
