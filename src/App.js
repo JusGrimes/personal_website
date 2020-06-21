@@ -16,15 +16,16 @@ function App() {
     return (
         <Router>
             <NavBar />
+
             <Switch>
-                <Route path="/">
+                <Route exact path="/">
                     <Home/>
                 </Route>
                 <Route path="/about">
                     <About/>
                 </Route>
                 <Route path="/projects">
-                    <Projects/>
+                    <Projects userName="JusGrimes"/>
                 </Route>
             </Switch>
         </Router>
