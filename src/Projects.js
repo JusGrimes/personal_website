@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import "./Projects.css"
+import ProjectTile from "./ProjectTile";
 
 class Projects extends Component {
 
@@ -19,11 +20,13 @@ class Projects extends Component {
             .then(json => {
                 let projectsArr = [];
                 for(let i = 0; i < json.length;i++){
-                    let curObj = {};
-                    curObj.name = json[i].name;
-                    curObj.url = json[i].html_url;
-                    curObj.description = json.description === undefined ? "": json.description;
-                    projectsArr.push(curObj);
+                    if(!json[i].fork){
+                        let curObj = {};
+                        curObj.name = json[i].name;
+                        curObj.url = json[i].html_url;
+                        curObj.description = json.description === undefined ? "": json.description;
+                        projectsArr.push(curObj);
+                    }
                 }
                 this.setState({projects: projectsArr});
             });
@@ -32,9 +35,11 @@ class Projects extends Component {
     render() {
         return (
             <div className="container">
-                {this.state.projects.map((value, index) => {
-                    return <div>{index} {value.name} { value.url} {value.description}</div>
+                <div className="inner-container">
+                {this.state.projects.map((value) => {
+                    return <ProjectTile info={value}/>
                 })}
+                </div>
             </div>
         );
     }

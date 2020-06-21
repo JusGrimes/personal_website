@@ -1,8 +1,6 @@
 body {
     background-image: linear-gradient(180deg,var(--background-color), hsl(148, 61%, 62%));
     color: var(--white);
-    height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
     background-attachment:  fixed;
 }

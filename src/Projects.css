@@ -2,7 +2,14 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     flex-wrap: wrap;
     overflow: hidden;
-    height: 100%;
+}
+
+.inner-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
 }
