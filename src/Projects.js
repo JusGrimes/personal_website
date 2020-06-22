@@ -37,8 +37,8 @@ class Projects extends Component {
         return (
             <div className="container">
                 <div className="inner-container">
-                {this.state.projects.map((value) => {
-                    return <ProjectTile info={value}/>
+                {this.state.projects.map((value, key) => {
+                    return <ProjectTile key={key}  info={value}/>
                 })}
                 </div>
             </div>

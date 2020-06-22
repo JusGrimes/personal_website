@@ -5,12 +5,12 @@ a.project-tile{
     border: .4rem solid var(--black);
     border-radius: 3px;
     margin: .6rem;
+    height:8rem;
 }
 
 .header {
     text-align: center;
     border-bottom: .2rem solid var(--black);
-    width: 100%;
 }
 
 .description {
