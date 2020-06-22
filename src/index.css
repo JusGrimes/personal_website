@@ -11,7 +11,17 @@
     --black : hsl(0, 0%, 18%);
     --white : hsl(240, 100%, 99%);
 }
-
-body {
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
