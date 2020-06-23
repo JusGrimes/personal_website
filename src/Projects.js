@@ -13,7 +13,6 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        console.log("got here");
         let url = "https://api.github.com/users/" + this.username + "/repos";
         fetch(url)
             .then(response => response.json())
@@ -36,11 +35,9 @@ class Projects extends Component {
     render() {
         return (
             <div className="container">
-                <div className="inner-container">
                 {this.state.projects.map((value, key) => {
                     return <ProjectTile key={key}  info={value}/>
                 })}
-                </div>
             </div>
         );
     }

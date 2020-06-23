@@ -1,16 +1,7 @@
 .container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 10%);
-    flex-wrap: wrap;
-}
-
-.inner-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 85%;
-    height:100%;
-    align-content: center;
+    align-content:center;
+    /*padding: 70px 8% 0 8%;*/
 }

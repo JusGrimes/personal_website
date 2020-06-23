@@ -6,6 +6,7 @@ a.project-tile{
     border-radius: 3px;
     margin: .6rem;
     height:8rem;
+    min-height: 8rem;
 }
 
 .header {

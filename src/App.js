@@ -15,18 +15,20 @@ import NavBar from "./NavBar";
 function App() {
     return (
         <Router>
-            <NavBar />
-            <Switch className="content">
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route path="/about">
-                    <About/>
-                </Route>
-                <Route path="/projects">
-                    <Projects userName="JusGrimes"/>
-                </Route>
-            </Switch>
+            <NavBar/>
+            <main>
+                <Switch>
+                        <Route exact path="/">
+                            <Home/>
+                        </Route>
+                        <Route path="/about">
+                            <About/>
+                        </Route>
+                        <Route path="/projects">
+                            <Projects userName="JusGrimes"/>
+                        </Route>
+                </Switch>
+            </main>
         </Router>
 
     );

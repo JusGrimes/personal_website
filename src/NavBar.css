@@ -2,9 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--black);
-    position:sticky;
-    top:0;
-    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 div.nav-logo {
